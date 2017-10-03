@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabezaComponent implements OnInit {
 
+  titulo: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.titulo = 'Curso de Angular';
   }
 
 }
