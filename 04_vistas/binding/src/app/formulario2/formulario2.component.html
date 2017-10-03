@@ -1,0 +1,11 @@
+<p>
+    <label for="input-name2">Nombre:</label>
+    <input id="input-name2" type="text" [ngModel]="sName">    
+</p>
+<p>
+  <button (click)="btnReset()">Reset</button>
+  <button (click)="btnBorrar($event)">Borrar</button>
+</p>
+ <p>
+    Hola {{sName.toUpperCase()}}!!!
+ </p>

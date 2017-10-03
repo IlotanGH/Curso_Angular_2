@@ -1,3 +1,19 @@
+<h2>ANTES</h2>
 <p>
-  formulario1 works!
+  <label for="input-name">Nombre:</label>
+  <input id="input-name" type="text" 
+    [ngModel]="sName"
+    (ngModelChange) = 'sName = $event'>
 </p>
+<p>
+  Hola {{sName}}!!!
+</p>
+<h2>BANANA IN A BOX</h2>
+<p>
+    <label for="input-name2">Nombre:</label>
+    <input id="input-name2" type="text" 
+      [(ngModel)]="sName">
+</p>
+ <p>
+    Hola {{sName}}!!!
+ </p>
