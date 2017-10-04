@@ -1,0 +1,26 @@
+<p>
+    <label>Seleccione impresora...</label>
+</p>
+<div *ngFor="let impresora of aImpresoras">
+    <input  type="radio" [(ngModel)]="sImpresora" [value]="impresora">
+    <label>{{impresora}}</label>
+</div>
+<p>
+    <label for="input-imp">Impresora seleccionada:</label>
+    <input id="input-imp" type="text" [(ngModel)]="sImpresora" placeholder="Seleccione una impresora..." [disabled]="isDisabled"/>
+</p>
+<p>
+    <label for="check-bloq">Bloquear seleccion:</label>
+    <input id="check-bloq" type="checkbox" [(ngModel)]="isDisabled" />
+</p>
+<p>
+    <label for="select">Provincia</label>
+    <select id="select" [(ngModel)]="provinciaSeleccionada" (ngModelChange)="avisarProvincia()" >
+        <option *ngFor="let provincia of aProvincias" [ngValue]="provincia">
+            {{provincia.name}}
+        </option>
+    </select>
+</p>
+<p>
+    <label for="input-pro">Provincia seleccionada:</label>{{provinciaSeleccionada.name}}
+</p>
