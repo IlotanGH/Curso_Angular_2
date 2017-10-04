@@ -6,11 +6,19 @@
   <button (click)="addPensamiento()">Añadir pensamiento</button>
 </p>
 
-<div *ngIf="aPensamientos.length > 0">
+<div *ngIf="aPensamientos.length > 0; then hayIdeas else noHayIdeas"></div>
+
+<ng-template #hayIdeas>
   <h2>
     Lista de pensamientos que he tenido:
   </h2>
   <ul>
     <li *ngFor="let pensamiento of aPensamientos">{{pensamiento}}</li>
   </ul>
-</div>
+</ng-template>
+
+<ng-template #noHayIdeas>
+  <h3>
+    No he tenido ningun pensamiento aun...
+  </h3>
+</ng-template>
