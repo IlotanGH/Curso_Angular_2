@@ -1,3 +1,4 @@
+import { CatalogoModule } from './catalogo/catalogo.module';
 
 
 // Modulos de Angular
@@ -20,7 +21,6 @@ import { AutoresComponent } from './autores/autores.component';
 import { EnlacesComponent } from './enlaces/enlaces.component';
 import { AboutComponent } from './about/about.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +38,7 @@ import { AboutComponent } from './about/about.component';
     HomeModule,
     EnlacesModule,
     AutoresModule,
+    CatalogoModule,
     AboutModule
   ],
   providers: [],
