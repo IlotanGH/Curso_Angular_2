@@ -1,3 +1,5 @@
+Se trabaja con VISUAL STUDIO CODE.
+
 One Note ==> Programa para tomar notas y apuntes de Microsoft.
 
 mklink /D node_modules ..\..\node_modules ==> linkar la carpeta node_modules por que pesa mucho para no tenerla repetida muchas veces.
@@ -15,6 +17,9 @@ ng serve ==> arrancar el servidor
 ng serve --preserve-symlinks ==> arrancar el servidor conservando los linkados simulados
 
 ng g m shared ==> crea un modulo "shared"
+
+
+
 
 
 https://github.com/ilotangh ==> gh mio
